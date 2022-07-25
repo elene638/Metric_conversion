@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Conversion</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <h1>Metric/Imperial unit conversion</h1>
+        <form action="/" method="post">
+          <input type="number" name="num" class="number" />
+        </form>
+      </div>
+    </header>
+    <div class="body">
+      <div class="conversion" id="length">
+        <h3>Length (Meter/Feet)</h3>
+        <% for (var i = 0; i<number.length;  i++) { %>
+          <p>
+            <%= number[i] %> meters = <%= meterConverted[i] %> feet | <%= number[i] %> feet
+            = <%= feetConverted[i] %> meters
+          </p> 
+          <%}%>
+      </div>
+      <div class="conversion" id="litre">
+        <h3>Volume (litre/gallon)</h3>
+        <% for (var i = 0; i<number.length;  i++) { %>
+          <p>
+            <%= number[i] %> litre = <%= litreConverted[i] %> gallon | <%= number[i] %> gallon
+            = <%= gallonConverted[i] %> litre
+          </p> 
+          <%}%>
+      </div>
+      <div class="conversion" id="mass">
+        <h3>Mass (kilos/pounds)</h3>
+        <% for (var i = 0; i<number.length;  i++) { %>
+          <p>
+            <%= number[i] %> kilos = <%= kiloConverted[i] %> pounds | <%= number[i] %> pounds
+            = <%= poundConverted[i] %> kilos
+          </p> 
+          <%}%>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

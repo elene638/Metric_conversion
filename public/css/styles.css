@@ -1,0 +1,51 @@
+body {
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  background-image: linear-gradient(to right, #585dfe, #fb3796);
+  height: 400px;
+}
+
+.header-content {
+  font-family: inherit;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 38px;
+  padding-top: 38px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+form {
+  font-size: 97px;
+  padding-bottom: 38px;
+}
+
+/*form {
+  font-size: 97px;
+  padding-bottom: 38px;
+}*/
+
+.body {
+  min-height: 400px;
+  background-color: #1f2937;
+  padding-top: 1px;
+}
+
+.conversion {
+  padding: 20px 0;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.conversion p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #d2d2d2;
+}
